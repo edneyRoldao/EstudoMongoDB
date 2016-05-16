@@ -3,6 +3,8 @@
 	Edney roldão - 15/05/2016
 	- Vamos usar um loop para inserir 50.000 registros não indexados.
 */
+
+// Fução que carrega 50.000 documentos
 var carregarRegistros = function() {
 	for(var i = 0; i < 50000; i++) {
 		db.testdb.insert({"account": "account" + i, "age": Math.floor(Math.random() * 90)});
